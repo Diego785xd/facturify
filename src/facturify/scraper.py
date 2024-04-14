@@ -301,7 +301,7 @@ def main(args):
 
     Args:
       args (List[str]): command line parameters as list of strings
-          (for example  ``["--verbose", "42"]``).
+          (for example  ``["--verbose", "https://venta.etn.com.mx/FacturacionElectronica/IndexFacturaElec.html", "XXX001213NT5", "xxx@hotmail.com", "191101714", "1593", "16", "Razon Social", "Actividad", "Gastos en General", 00000, "Tarjeta de crédito"]``).
     """
     args = parse_args(args)
     setup_logging(args.loglevel)
@@ -328,6 +328,6 @@ if __name__ == "__main__":
     # After installing your project with pip, users can also run your Python
     # modules as scripts via the ``-m`` flag, as defined in PEP 338::
     #
-    #     python -m facturify.scraper 42
+    #     python -m facturify.scraper -v https://venta.etn.com.mx/FacturacionElectronica/IndexFacturaElec.html XXX001213NT5 xxx@hotmail.com 191101714 1593 16 "Razon Social" "Actividad" "Gastos en General" 00000 "Tarjeta de crédito"
     #
     run()
