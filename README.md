@@ -4,7 +4,7 @@
 Navigating the complexities of entering new markets can be daunting for SMEs, especially in the tourism sector where localized and quick service is crucial. Facturify was conceived to bridge this gap, leveraging the power of AI to simplify and automate invoice processing. This not only enhances the operational efficiency of SMEs but also boosts their capability to attract and serve a diverse tourist demographic.
 
 ## What it does
-*Demo link*: [Explore Facturify](https://youtu.be/FacturifyDemo)
+*Demo link*: [Explore Facturify](http://40.121.246.142:5000/docs)
 
 Facturify transforms the way SMEs handle invoicing in the tourism industry. By utilizing advanced AI technologies, the platform allows for the quick generation of tailored invoices, easy tracking of payments, and efficient customer data management. These capabilities ensure that businesses can focus more on customer service and less on administrative tasks.
 
@@ -23,14 +23,9 @@ The development involved seamless integration of these technologies to ensure a 
 
 ## Reaching out to potential users
 For the latest updates and partnerships, follow us on our official communication channels:
-- [Facturify Updates](https://x.com/facturifyupdates)
 
 ## Challenges we ran into
 Integrating multiple technologies was initially challenging, particularly ensuring real-time data synchronization across different services without lag.
 
 ## Accomplishments that we're proud of
 Despite the initial challenges, our team successfully deployed a fully functional AI-driven invoicing platform tailored for the tourism industry. We are particularly proud of how seamlessly the system works in real-time scenarios, providing immediate benefits to our users.
-
----
-
-This README provides a comprehensive overview of your project in a concise format, suitable for your GitHub repository. Make sure to replace the placeholder links with actual URLs relevant to your project
