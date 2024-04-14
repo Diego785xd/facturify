@@ -167,20 +167,25 @@ def form3(driver, args):
 
 
 def web_scraper(args):
-    """Scrapes an url and returns the data"""
-    _logger.info(f"Scraping URL: {args.url}")
-    driver = get_driver()
-    driver.get(args.url)
-    # do stuff
-    _logger.info(f"First form: {args.rfc} {args.email}")
-    form1(driver, args)
-    _logger.info(f"Second form")
-    form2(driver, args)
-    _logger.info(f"Third form")
-    form3(driver, args)
-    # simulate ops with time
-    time.sleep(5)
-    driver.quit()
+    """Scrapes an url and submit a form"""
+    try:
+        _logger.info(f"Scraping URL: {args.url}")
+        driver = get_driver()
+        driver.get(args.url)
+        # do stuff
+        _logger.info(f"First form: {args.rfc} {args.email}")
+        form1(driver, args)
+        _logger.info(f"Second form")
+        form2(driver, args)
+        _logger.info(f"Third form")
+        form3(driver, args)
+        # simulate ops with time
+        time.sleep(5)
+        driver.quit()
+        return "success"
+    except Exception as e:
+        _logger.error(e)
+        return "error"
 
 
 # ---- CLI ----
