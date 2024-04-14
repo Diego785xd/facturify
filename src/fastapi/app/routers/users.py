@@ -13,3 +13,8 @@ async def create_user(item: Items):
 @router.get("/", status_code=200)
 async def search_user(query: str):
     return await user_service.search_user(query)
+
+@router.get("/user/ticket/{ticket_id}", status_code=200)
+async def get_user_ticket(ticket_id: str):
+    return await user_service.get_user_ticket(ticket_id)
+
