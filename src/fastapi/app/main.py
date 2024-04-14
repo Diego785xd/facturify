@@ -11,6 +11,7 @@ app = FastAPI()
 app.include_router(health.router)
 app.include_router(ocr.router)
 app.include_router(users.router)
+app.include_router(scraper.router)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=5000)
