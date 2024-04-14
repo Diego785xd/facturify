@@ -6,12 +6,8 @@ import requests
 
 
 def main(image):
-    if image.startswith("http"):
-        img = requests.get(image).content
-    else:
-        img = open(image, "rb").read()
 
-    detection = DetectionComponent(img, PROMPT)
+    detection = DetectionComponent(image, PROMPT)
     raw_response = ResponseComponent()
     builder = DectectionBuilder(detection, raw_response)
 

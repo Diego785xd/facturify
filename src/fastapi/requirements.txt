@@ -44,3 +44,4 @@ typing_extensions==4.11.0
 uritemplate==4.1.1
 urllib3==2.2.1
 uvicorn==0.29.0
+azure-storage-blob==2.1.0
