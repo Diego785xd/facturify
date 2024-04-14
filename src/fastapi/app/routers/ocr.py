@@ -6,6 +6,6 @@ router = APIRouter()
 
 
 @router.post("/ocr", status_code=200)
-async def ocr(url: str):
+async def ocr(image_name: str):
 
-    return await ocr_service.process_ocr(url)
+    return await ocr_service.process_ocr(image_name)
